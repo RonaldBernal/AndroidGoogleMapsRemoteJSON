@@ -1,42 +1,52 @@
-{"Contacts": [
+{"Restaurants": [
 	{
 	"name": "Starbucks",
-	"location": "20.734771, -103.455362",
+	"lat": 20.734771,
+	"long": -103.455362,
 	},
 	{
 	"name": "Güich",
-	"location": "20.734898, -103.455470",
+	"lat": 20.734898, 
+	"long": -103.455470,
 	},
 	{
 	"name": "Yumyum",
-	"location": "20.734953, -103.455520",
+	"lat": 20.734953, 
+	"long": -103.455520,
 	},
 	{
 	"name": "La Selva",
-	"location": "20.735012, -103.455585",
+	"lat": 20.735012, 
+	"long": -103.455585,
 	},
 	{
 	"name": "Cafeteria",
-	"location": "20.733194, -103.454652",
+	"lat": 20.733194, 
+	"long": -103.454652,
 	},
 	{
-	"name": "subway",
-	"location": "20.734580, -103.457687",
+	"name": "Subway",
+	"lat": 20.734580, 
+	"long": -103.457687,
 	},
 	{
-	"name": "yumyum2",
-	"location": "20.734500, -103.457699",
+	"name": "Yumyum2",
+	"lat": 20.734500, 
+	"long": -103.457699,
 	},
 	{
-	"name": "juvie juice",
-	"location": "20.734633, -103.457691",
+	"name": "Juvie Juice",
+	"lat": 20.734633, 
+	"long": -103.457691,
 	},
 	{
-	"name": "tacos el ranchero",
-	"location": "20.731383, -103.454314",
+	"name": "Tacos el Ranchero",
+	"lat": 20.731383, 
+	"long": -103.454314,
 	},
 	{
-	"name": "too burger",
-	"location": "20.731383, -103.454314",
+	"name": "Too Burger",
+	"lat": 20.731383, 
+	"long": -103.454314,
 	}
 ]}

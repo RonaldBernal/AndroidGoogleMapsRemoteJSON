@@ -1,52 +1,54 @@
-{"Restaurants": [
-	{
-	"name": "Starbucks",
-	"lat": 20.734771,
-	"long": -103.455362,
-	},
-	{
-	"name": "Güich",
-	"lat": 20.734898, 
-	"long": -103.455470,
-	},
-	{
-	"name": "Yumyum",
-	"lat": 20.734953, 
-	"long": -103.455520,
-	},
-	{
-	"name": "La Selva",
-	"lat": 20.735012, 
-	"long": -103.455585,
-	},
-	{
-	"name": "Cafeteria",
-	"lat": 20.733194, 
-	"long": -103.454652,
-	},
-	{
-	"name": "Subway",
-	"lat": 20.734580, 
-	"long": -103.457687,
-	},
-	{
-	"name": "Yumyum2",
-	"lat": 20.734500, 
-	"long": -103.457699,
-	},
-	{
-	"name": "Juvie Juice",
-	"lat": 20.734633, 
-	"long": -103.457691,
-	},
-	{
-	"name": "Tacos el Ranchero",
-	"lat": 20.731383, 
-	"long": -103.454314,
-	},
-	{
-	"name": "Too Burger",
-	"lat": 20.731383, 
-	"long": -103.454314,
-	}
-]}
+{
+	"Restaurants": [
+		{
+			"name": "Starbucks",
+			"lat": 20.734771,
+			"long": -103.455362
+		},
+		{
+			"name": "Güich",
+			"lat": 20.734898, 
+			"long": -103.455470
+		},
+		{
+			"name": "Yumyum",
+			"lat": 20.734953, 
+			"long": -103.455520
+		},
+		{
+			"name": "La Selva",
+			"lat": 20.735012, 
+			"long": -103.455585
+		},
+		{
+			"name": "Cafeteria",
+			"lat": 20.733194, 
+			"long": -103.454652
+		},
+		{
+			"name": "Subway",
+			"lat": 20.734580, 
+			"long": -103.457687
+		},
+		{
+			"name": "Yumyum2",
+			"lat": 20.734500, 
+			"long": -103.457699
+		},
+		{
+			"name": "Juvie Juice",
+			"lat": 20.734633, 
+			"long": -103.457691
+		},
+		{
+			"name": "Tacos el Ranchero",
+			"lat": 20.731383, 
+			"long": -103.454314
+		},
+		{
+			"name": "Too Burger",
+			"lat": 20.731383, 
+			"long": -103.454314
+		}
+	]
+}

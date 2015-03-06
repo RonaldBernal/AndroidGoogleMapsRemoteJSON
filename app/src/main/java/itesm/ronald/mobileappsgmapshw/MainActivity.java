@@ -44,9 +44,11 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void createMarkers(ArrayList<LatLng> locations, ArrayList<String> markerTitles){
-        gm.addMarker(new MarkerOptions()
-                .position(new LatLng(20.734536, -103.456609))
-                .title("Hey"));
+        for (int i=0; i < locations.size(); i++) {
+            gm.addMarker(new MarkerOptions()
+                    .position(locations.get(i))
+                    .title(markerTitles.get(i)));
+        }
     }
 
 }

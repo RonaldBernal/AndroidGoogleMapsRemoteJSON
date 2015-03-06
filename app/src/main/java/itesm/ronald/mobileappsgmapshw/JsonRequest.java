@@ -22,10 +22,11 @@ import java.util.ArrayList;
 /**
  * Created by Ronald on 2/27/2015.
  */
-public class JsonRequest extends AsyncTask<String, Void, ArrayList<LatLng>> {
+public class JsonRequest extends AsyncTask<String, Void, ArrayList<String>> {
     private Context context;
     private ProgressDialog dialog;
     private ArrayList<LatLng> location = new ArrayList<LatLng>();
+    private ArrayList<String> markerTitles = new ArrayList<String>();
 
     public JsonRequest(Context context, ArrayList<LatLng> location){
         this.context = context;
@@ -41,7 +42,7 @@ public class JsonRequest extends AsyncTask<String, Void, ArrayList<LatLng>> {
     }
 
     @Override
-    protected ArrayList<LatLng> doInBackground(String... params) {
+    protected ArrayList<String> doInBackground(String... params) {
         HttpGet get = new HttpGet(params[0]);
         StringBuilder sb = new StringBuilder();
         HttpClient client = new DefaultHttpClient();
@@ -65,20 +66,27 @@ public class JsonRequest extends AsyncTask<String, Void, ArrayList<LatLng>> {
 
                 result = new JSONObject(sb.toString());
 
-                JSONArray contacts = result.getJSONArray("Restaurants");
-                for (int i = 0; i < contacts.length(); i++) {
-                    JSONObject contact = contacts.getJSONObject(i);
-                    /*this.location.add(
+                JSONArray locationArray = result.getJSONArray("Restaurants");
+                for (int i = 0; i < locationArray.length(); i++) {
+                    JSONObject location = locationArray.getJSONObject(i);
+                    this.location.add(
                             new LatLng(
-                                contacts.getDouble("lat"),
-                                contacts.getDouble("long")
+                                    location.getDouble("lat"),
+                                    location.getDouble("long")
                             )
-                    );*/
+                    );
+                    this.markerTitles.add(location.getString("name"));
                 }
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return this.location;
+        return this.markerTitles;
     }
+
+    @Override
+    protected void onPostExecute(ArrayList<String> result){
+        this.dialog.dismiss();
+    }
+
 }
